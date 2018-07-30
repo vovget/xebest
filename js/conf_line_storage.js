@@ -1,6 +1,5 @@
 // 折线图
 var line_storage_temp = echarts.init(document.getElementById('line_storage_temp'));
-var line_car_temp = echarts.init(document.getElementById('line_car_temp'));
 option_line_storage_temp = {
     // color: ['#003366', '#006699', '#4cabce'],
     color: ['#00b9ed', '#ae5ea2', '#20ad36'],
@@ -78,4 +77,3 @@ option_line_storage_temp = {
 };
 
 line_storage_temp.setOption(option_line_storage_temp, true);
-line_car_temp.setOption(option_line_storage_temp, true);

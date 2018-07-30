@@ -11,16 +11,16 @@ option_g1 = {
         {
             name: '漯河冷库运行能效比',
             type: 'gauge',
-            min: 1,
+            min: 0,
             max: 6,
-            splitNumber: 5, // 分割数（大）
+            splitNumber: 6, // 分割数（大）
             radius: '90%',
             detail: {formatter:'{value}'},
             axisLine: { // 坐标轴线
                 lineStyle: { // 属性lineStyle控制线条样式
                     color: [
-                        [0.4, '#c23630'],
-                        [0.8, '#63869d'],
+                        [0.5, '#c23630'],
+                        [0.833, '#63869d'],
                         [1, '#c23630']
                     ],
                     width: 26, // 扇形厚度

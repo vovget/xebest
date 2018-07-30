@@ -16,7 +16,7 @@
             <img src="image/logo.png" style="width: 100%; height: 100%; padding-bottom: 12px;" />
         </div>
         <h1 class="header-title">可信冷链全程监控中心</h1>
-        <div class="header-timer"> 09:20:10</div>
+        <div class="header-timer" id="timer"> 09:20:10</div>
         <div class="header-alarm-wrapper">
             <img src="image/alarm.png" style="width: 60px; margin-bottom: -22px; margin-right: 2px;" >
             <span>氨气预警</span>
@@ -38,14 +38,14 @@
                     <div class="circle-wrapper">
                         <div class="circle">
                             <p id="storage_temp_main" class="temp temp-style-1">-18℃</p>
-                            <p id="storage_name_main">郑州冷库1区</p>
+                            <p id="storage_name_main">邢台冷库1区</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-50">
                     <table id="table_storage" class="table-storage">
-                        <tr><td><p id="storage_temp_1" class="temp temp-style-2">-12℃</p><p id="storage_name_1">郑州冷库 2区</p></td></tr>
-                        <tr><td><p id="storage_temp_2" class="temp temp-style-2">-12℃</p><p id="storage_name_2">郑州冷库 2区</p></td></tr>
+                        <tr><td><p id="storage_temp_1" class="temp temp-style-2">-12℃</p><p id="storage_name_1">北京冷库 1区</p></td></tr>
+                        <tr><td><p id="storage_temp_2" class="temp temp-style-2">-20℃</p><p id="storage_name_2">高碑店冷库 2区</p></td></tr>
                     </table>
                 </div>
             </div>
@@ -80,26 +80,78 @@
         <div class="panel col-15">
             <div class="flag">食品安全状态</div>
             <div class="content">
-                <table id="table_food" class="table-food">
-                    <tr>
-                        <td><p id="food_temp_1" class="temp temp-style-1">-18℃</p></td>
-                        <td><p id="food_name_1" class="name">猪肋排</p>
-                            <p id="food_storage_1" class="storage">郑州冷库1区</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><p id="food_temp_2" class="temp temp-style-1">-18℃</p></td>
-                        <td><p id="food_name_2" class="name">猪肋排</p>
-                            <p id="food_storage_2" class="storage">郑州冷库1区</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><p id="food_temp_3" class="temp temp-style-1">-18℃</p></td>
-                        <td><p id="food_name_3" class="name">猪肋排</p>
-                            <p id="food_storage_3" class="storage">郑州冷库1区</p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="scroll-box">
+                    <div class="scroll-div">
+                        <ul>
+                            <!-- 1 -->
+                            <li>
+                                <div class="li-left"><div id="food_temp_1" class="temp temp-style-1">-17℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_1" class="name">冷冻肋排</p>
+                                    <p id="food_storage_1" class="storage">北京冷库1区</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-left"><div id="food_temp_2" class="temp temp-style-1">-20℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_2" class="name">冷冻基围虾</p>
+                                    <p id="food_storage_2" class="storage">北京冷库2区</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-left"><div id="food_temp_3" class="temp temp-style-1">-18℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_3" class="name">冷冻牛排</p>
+                                    <p id="food_storage_3" class="storage">北京冷库3区</p>
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li>
+                                <div class="li-left"><div id="food_temp_4" class="temp temp-style-1">-19℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_4" class="name">冷冻白条猪</p>
+                                    <p id="food_storage_4" class="storage">高碑店冷库1区</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-left"><div id="food_temp_5" class="temp temp-style-1">-20℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_5" class="name">冷冻鸡柳</p>
+                                    <p id="food_storage_5" class="storage">高碑店冷库2区</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-left"><div id="food_temp_6" class="temp temp-style-1">-19℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_6" class="name">冷冻猪蹄</p>
+                                    <p id="food_storage_6" class="storage">高碑店冷库3区</p>
+                                </div>
+                            </li>
+                            <!-- 3 -->
+                            <li>
+                                <div class="li-left"><div id="food_temp_7" class="temp temp-style-1">-20℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_7" class="name">冷冻基围虾</p>
+                                    <p id="food_storage_7" class="storage">邢台冷库1区</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-left"><div id="food_temp_8" class="temp temp-style-1">-15℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_8" class="name">冷冻羊排</p>
+                                    <p id="food_storage_8" class="storage">邢台冷库2区</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-left"><div id="food_temp_9" class="temp temp-style-1">-17℃</div></div>
+                                <div class="li-right">
+                                    <p id="food_name_9" class="name">冷冻肋排</p>
+                                    <p id="food_storage_9" class="storage">邢台冷库3区</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -111,9 +163,9 @@
             <div id="line_storage_temp" style="width: 600px; height: 340px;"></div>
         </div>
         <div class="panel map">
-            <div class="flag-bg flag">物流温度趋势</div>
             <div class="map-cover"></div>
             <div id="map_path" class="map-path"></div>
+            <div class="flag-bg"><span class="flag">物流温度趋势</span></div>
         </div>
         <div class="panel">
             <div class="flag">冷藏车温度趋势</div>
@@ -131,7 +183,7 @@
                 <div class="gauge-small-wrapper">
                     <div id="gauge_small_1" class="gauge-small"></div>
                 </div>
-                <!-- <div class="gauge-small-wrapper">
+                <div class="gauge-small-wrapper">
                     <div id="gauge_small_2" class="gauge-small"></div>
                 </div>
                 <div class="gauge-small-wrapper">
@@ -139,7 +191,7 @@
                 </div>
                 <div class="gauge-small-wrapper">
                     <div id="gauge_small_4" class="gauge-small"></div>
-                </div> -->
+                </div>
             </div>
         </div>
         <div class="panel">
@@ -161,134 +213,21 @@
     </div>
 </main>
 
-    <!-- <div id="main" style="width: 600px;height:400px;"></div> -->
-
-<script type="text/javascript">
-
-
-/***********************************************************************************/
-// // 地图路线
-//     var map_path = echarts.init(document.getElementById("map_path"));
-//     var app = {};
-//     var infoMap = [
-//         {name: '北京', coord: [26, 42], isArrive: true, isCurrent: false},
-//         {name: '高碑店', coord: [24, 36], isArrive: true, isCurrent: false},
-//         {name: '邢台', coord: [19.5, 21], isArrive: true, isCurrent: true},
-//         {name: '安阳', coord: [19, 10], isArrive: false, isCurrent: false},
-//         {name: '郑州', coord: [16, 0], isArrive: false, isCurrent: false}
-//     ];
-    
-//     //var color  = ['#ACACAC', '#058232', '#2FD871', '#FD2F05']; //灰，绿，浅绿，红
-//     var color  = ['#b6c5d3', '#068433', '#3cd978', '#FD2F05']; //灰，绿，浅绿，红
-
-//     option_map_path = null;
-//     option_map_path = {
-//         grid: {
-//             bottom: 20
-//         },
-//         xAxis: {
-//             show: false,
-//             //interval: 2,
-//             max: 50
-//         },
-//         yAxis: {
-//             show: false,
-//             //interval: 2,
-//             max: 50
-//         },
-//         series: [
-//             {// 城市点
-//                 type: 'scatter',
-//                 zlevel: 2,
-//                 data: infoMap.map(function(item) { //[[16, 46], [14, 42], [9, 27], [7.5, 17], [1, 8]],
-//                     return {
-//                         name: item.name,
-//                         value: item.coord,
-//                         symbolSize: 18,
-//                         label: {
-//                             normal: {                  // 默认的文本标签显示样式
-//                                 show: item.isCurrent ? false : true,
-//                                 position: 'left',      // 标签显示的位置
-//                                 formatter: '{b}'       // 标签内容格式器
-//                             }
-//                         },
-//                         itemStyle: {
-//                             color: item.isArrive ? color[1] : color[0],
-//                             borderColor: item.isArrive ? color[2] : color[0],
-//                             borderWidth: 2,
-//                             opacity: 1
-//                         }
-//                     };
-//                 })
-//             },
-//             {// 总路线
-//                 type: 'line',
-//                 zlevel: 2,
-//                 showSymbol: false,
-//                 lineStyle: {
-//                     width: 4
-//                 },
-//                 itemStyle: {
-//                     color: color[0],
-//                 },
-//                 data: infoMap.map(function(item) {
-//                     return {
-//                         name: item.name,
-//                         value: item.coord
-//                     };
-//                 })
-//             },
-//             {// 已走路线
-//                 type: 'line',
-//                 zlevel: 2,
-//                 showSymbol: false,
-//                 itemStyle: {
-//                     color: color[2],
-//                 },
-//                 lineStyle: {
-//                     width: 4
-//                 },
-//                 data: infoMap.map(function(item) {
-//                     if (item.isArrive) {
-//                         return {
-//                             name: item.name,
-//                             value: item.coord
-//                         };
-//                     }
-//                 })
-//             },
-//             {// 散点效果
-//                 type: 'effectScatter',         
-//                 zlevel: 3,
-//                 label: {
-//                     normal: {                  // 默认的文本标签显示样式
-//                         show: true,
-//                         position: 'left',      // 标签显示的位置
-//                         formatter: '{b}'       // 标签内容格式器
-//                     }
-//                 },
-//                 symbolSize: 18,
-//                 itemStyle: {
-//                     normal: {
-//                         color: color[3]
-//                     }
-//                 },
-//                 data: [{
-//                         name: '邢台',
-//                         value: [19.5, 21],  // 起点的位置
-//                         symbolSize: 18,  // 散点的大小，通过之前设置的权重来计算，val的值来自data返回的value
-//                 }]
-//             }
-//         ]
-//     };
-
-//     map_path.setOption(option_map_path, true);
-</script>
-
 <script type="text/javascript" src="js/conf_gauge.js"></script>
 <script type="text/javascript" src="js/conf_gauge_small.js"></script>
 <script type="text/javascript" src="js/conf_line_storage.js"></script>
 <script type="text/javascript" src="js/conf_line_car.js"></script>
 <script type="text/javascript" src="js/conf_map.js"></script>
+<script type="text/javascript">
+function displayTime() {
+    var timer = document.getElementById("timer");
+    var now = new Date(); // 得到当前时间
+    timer.innerHTML = now.toLocaleTimeString(); //让timer来显示它
+    setTimeout(displayTime,1000); //在1秒后再次执行
+}
+
+window.onload = displayTime; //当onload事件发生时开始显示时间
+</script>
+
 </body>
 </html>
