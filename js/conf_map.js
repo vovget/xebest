@@ -3,9 +3,9 @@
 var map_path = echarts.init(document.getElementById("map_path"));
 var app = {};
 var infoMap = [
-    {name: '北京', coord: [26, 42], temp: '-18℃', isArrive: true, isCurrent: false, date: '2018-07-29 22:21'},
-    {name: '高碑店', coord: [24, 36], temp: '-17℃', isArrive: true, isCurrent: false, date: '2018-07-30 03:10'},
-    {name: '邢台', coord: [19.5, 21], temp: '-15℃', isArrive: true, isCurrent: true, date: '2018-07-30 17:55'},
+    {name: '北京', coord: [26, 42], temp: '-12℃', isArrive: true, isCurrent: false, date: '2018-07-29 22:21'},
+    {name: '高碑店', coord: [24, 36], temp: '-20℃', isArrive: true, isCurrent: false, date: '2018-07-30 03:10'},
+    {name: '邢台', coord: [19.5, 21], temp: '-17℃', isArrive: true, isCurrent: true, date: '2018-07-30 17:55'},
     {name: '安阳', coord: [19, 10], isArrive: false, isCurrent: false},
     {name: '郑州', coord: [16, 0], isArrive: false, isCurrent: false}
 ];
@@ -117,6 +117,11 @@ option_map_path = {
         {// 散点效果
             type: 'effectScatter',         
             zlevel: 3,
+            rippleEffect: {
+                period: 3,
+                scale: 3,
+                brushType: 'stroke'
+            },
             label: {
                 normal: {                  // 默认的文本标签显示样式
                     show: true,
@@ -138,7 +143,6 @@ option_map_path = {
                     }
                 }
             },
-            symbolSize: 18,
             itemStyle: {
                 normal: {
                     color: color[3]
@@ -146,10 +150,10 @@ option_map_path = {
             },
             data: [{
                     name: '邢台',
-                    temp: '-20℃',
+                    temp: '-17℃',
                     date: '2018-08-01 07:30',
                     value: [19.5, 21],  // 起点的位置
-                    symbolSize: 18,  // 散点的大小，通过之前设置的权重来计算，val的值来自data返回的value
+                    symbolSize: 22,  // 散点的大小，通过之前设置的权重来计算，val的值来自data返回的value
             }]
         }
     ]

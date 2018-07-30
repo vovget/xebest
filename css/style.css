@@ -138,10 +138,10 @@ body {
 }
 .row-3 .flag-wrapper span {
     position: absolute;
-    width: 38px;
-    margin: 25px 10px 10px 10px;
-    font-size: 38px;
-    line-height: 38px;
+    width: 32px;
+    margin: 25px 15px 10px 15px;
+    font-size: 32px;
+    line-height: 32px;
     color: #74daff;
 }
 .li-left {
@@ -311,7 +311,8 @@ body {
 }
 .table-trans .car {
     margin: 10px 0;
-    font-size: 37px;
+    font-size: 28px;
+    /* font-size: 37px; */
     color: #1ce5d0;
 }
 .table-food {
