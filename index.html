@@ -226,7 +226,12 @@ function displayTime() {
     setTimeout(displayTime,1000); //在1秒后再次执行
 }
 
-window.onload = displayTime; //当onload事件发生时开始显示时间
+window.onload = function () {
+    displayTime(); //当onload事件发生时开始显示时间
+    
+    load_line_storage();
+    load_line_car();
+}
 </script>
 
 </body>

@@ -30,7 +30,7 @@ body {
     margin: 0 auto;
     padding: 10px 45px 30px 30px;
     background: rgba(11,88,165,0.7);
-    height: 80px;
+    height: 75px;
     max-width: 1920px;
 }
 .header-title {
@@ -88,8 +88,7 @@ body {
 }
 .row-3 {
     display: flex;
-    height: 210px;
-    /* height: 20%; */
+    height: 200px;
     margin-top: 6px;
 }
 .panel {
@@ -250,7 +249,7 @@ body {
     flex: 1;
     border-right: 1px solid #20628b;
      /* #74daff; */
-    height: 190px;
+    height: 180px;
 }
 .gauge-small-wrapper:last-child {
     border-right: none;
@@ -259,7 +258,7 @@ body {
     /* position: absolute; */
     /* bottom: -50px; */
     width: 220px;
-    height: 250px;
+    height: 230px;
 }
 
 /* 温度颜色 */

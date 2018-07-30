@@ -55,7 +55,7 @@ var option_sm_1 = {
                 color: '#33e4e5'
             },
             title: {
-                offsetCenter: [0, '-150%'],
+                offsetCenter: [0, '-135%'],
                 color: '#fff',
                 fontSize: 20
             },
@@ -120,7 +120,7 @@ var option_sm_2 = {
                 color: '#33e4e5'
             },
             title: {
-                offsetCenter: [0, '-150%'],
+                offsetCenter: [0, '-135%'],
                 color: '#fff',
                 fontSize: 20
             },
@@ -189,7 +189,7 @@ var option_sm_3 = {
                 color: '#33e4e5'
             },
             title: {
-                offsetCenter: [0, '-150%'],
+                offsetCenter: [0, '-135%'],
                 color: '#fff',
                 fontSize: 20
             },
@@ -258,7 +258,7 @@ var option_sm_4 = {
                 color: '#33e4e5'
             },
             title: {
-                offsetCenter: [0, '-150%'],
+                offsetCenter: [0, '-135%'],
                 color: '#fff',
                 fontSize: 20
             },
@@ -328,7 +328,7 @@ var option_sm_5 = {
                 color: '#33e4e5'
             },
             title: {
-                offsetCenter: [0, '-150%'],
+                offsetCenter: [0, '-135%'],
                 color: '#fff',
                 fontSize: 20
             },
@@ -394,7 +394,7 @@ var option_sm_6 = {
                 color: '#33e4e5'
             },
             title: {
-                offsetCenter: [0, '-150%'],
+                offsetCenter: [0, '-135%'],
                 color: '#fff',
                 fontSize: 20
             },
@@ -463,7 +463,7 @@ var option_sm_7 = {
                 color: '#33e4e5'
             },
             title: {
-                offsetCenter: [0, '-150%'],
+                offsetCenter: [0, '-135%'],
                 color: '#fff',
                 fontSize: 20
             },
@@ -532,7 +532,7 @@ var option_sm_8 = {
                 color: '#33e4e5'
             },
             title: {
-                offsetCenter: [0, '-150%'],
+                offsetCenter: [0, '-135%'],
                 color: '#fff',
                 fontSize: 20
             },
